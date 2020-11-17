@@ -82,15 +82,22 @@ public:
 
 int main()
 {
-	// 1605611104 : Tuesday, 17 November 2020 4:35:04 PM
-	DateTimeStamp test = DateTimeStamp(1605611104);
-	test.print();
-	test.print("epoch");
+  // 1605611104 : Tuesday, 17 November 2020 4:35:04 PM
+  DateTimeStamp test = DateTimeStamp(1605611104);
+  test.print();
+  test.print("epoch");
 
-	std::cout << "Testing with currrent time" << std::endl;
-	double now = std::chrono::duration_cast<std::chrono::seconds>
-								(std::chrono::system_clock::now().time_since_epoch()).count();
-	DateTimeStamp testCurr = DateTimeStamp(now);
-	testCurr.print();
-	testCurr.print("epoch");
+  std::cout << "Testing with currrent time" << std::endl;
+  double now = std::chrono::duration_cast<std::chrono::seconds>
+		(std::chrono::system_clock::now().time_since_epoch()).count();
+  DateTimeStamp testCurr = DateTimeStamp(now);
+  testCurr.print();
+  testCurr.print("epoch");
+  /*
+   17/11/2020 16:35:4
+   1605611104
+   Testing with currrent time
+   17/11/2020 18:36:5
+   1605618365
+  */
 }
