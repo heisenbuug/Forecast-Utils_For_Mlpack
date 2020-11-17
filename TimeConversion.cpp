@@ -82,7 +82,7 @@ public:
 
 int main()
 {
-	// 1605611104 -> Tuesday, 17 November 2020 4:35:04 PM
+	// 1605611104 : Tuesday, 17 November 2020 4:35:04 PM
 	DateTimeStamp test = DateTimeStamp(1605611104);
 	test.print();
 	test.print("epoch");
